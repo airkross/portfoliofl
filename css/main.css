@@ -138,7 +138,7 @@ html {
 }
 
 .modal-content {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid white;
   min-height: 560px;
 }
@@ -151,14 +151,15 @@ html {
 .modal-header h5 {
   font-weight: 700;
   letter-spacing: 0.3rem;
-  font-size: 1.6rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  border-bottom: 0.3rem dotted white;
+  border-bottom: 0.3rem dashed white;
 }
 
 .close {
   font-size: 3.5rem;
   font-weight: 400;
+  transition: opacity .2s ease;
 }
 
 .modal-footer {
@@ -176,8 +177,25 @@ html {
   border-left: 1px solid rgba(255, 255, 255, .8);
   padding: 1.2rem 4rem;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  color: rgba(255, 255, 255, .7);
+  transition: color .3s ease;
+}
+
+.close-down:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.modal-footer span{
+  text-align: center;
+  margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: .7;
+}
+.modal-footer>:not(:last-child){
+  margin-right: auto;
 }
 
 /* media */
