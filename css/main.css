@@ -1,0 +1,199 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.main {
+  background: url(../img/bg.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.main .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  align-items: center;
+}
+
+/* photo */
+.block-photo {
+  width: 10rem;
+  margin: 0 auto;
+  border: 0.2rem solid rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+.block-photo img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+/* line */
+.line {
+  height: 6rem;
+  border-right: 0.1rem solid white;
+}
+
+/* about me */
+.about-me {
+  margin: 0 auto;
+  max-width: 47rem;
+  border-top: 1px solid white;
+  border-bottom: 0.1rem solid white;
+  padding: 4rem 0;
+}
+
+.name {
+  text-align: center;
+  opacity: .9;
+  text-transform: uppercase;
+  letter-spacing: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.main-discribe {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: .7;
+  letter-spacing: 0.4rem;
+}
+
+/* navigation */
+.buttons-center {
+  text-align: center;
+}
+
+.main-buttons {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 48rem;
+  border: 3px solid rgba(255, 255, 255, .8);
+  border-radius: 0.5rem;
+}
+
+.main-button:focus {
+  outline: none;
+}
+
+.main-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: -0.2rem;
+  cursor: pointer;
+  width: 25%;
+  min-height: 5rem;
+  border-left: none;
+  border-right: none;
+  font-size: 1.7rem;
+  letter-spacing: 0.6px;
+}
+
+.main-button:hover {
+  background-color: rgba(255, 255, 255, .1);
+  transition: background-color .3s ease;
+}
+
+/* copyright */
+.copyright {
+  max-width: 48rem;
+  border-top: 0.1rem solid white;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.copyright-text {
+  text-transform: uppercase;
+  opacity: .7;
+  font-size: 1.2rem;
+}
+
+.copyright-text span:hover {
+  opacity: 1;
+}
+
+.copyright-text span {
+  border-bottom: 0.1rem dashed white;
+}
+
+/* model skills */
+.modal-dialog {
+  max-width: 910px;
+  padding: 0 1rem;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  min-height: 560px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 1.5rem;
+}
+
+.modal-header h5 {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-bottom: 0.3rem dotted white;
+}
+
+.close {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.modal-footer {
+  padding: 0;
+}
+
+.close-down:focus {
+  outline: none;
+}
+
+.close-down {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-left: 1px solid rgba(255, 255, 255, .8);
+  padding: 1.2rem 4rem;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* media */
+@media screen and (max-width:575px) {
+  html {
+    font-size: 9px;
+  }
+
+  .main-button {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width:359px) {
+  html {
+    font-size: 8px;
+  }
+}
