@@ -153,22 +153,19 @@
           </button>
         </div>
         <div class="modal-body">
-          <form class="contacts-form" action="mail.php" method="POST">
-            <input type="hidden" name="project_name" value="Web-Студия Руслана Гусейнова">
-            <input type="hidden" name="admin_email" value="airkross123@gmail.com">
-            <input type="hidden" name="form_subject" value="Форма контактов">
+          <form class="contacts-form" action="#" method="POST">
             <div class="row">
               <div class="col-sm-6">
                 <label for="name">Введите имя</label><br>
-                <input type="text" id="name" placeholder="Например, Иван">
+                <input type="text" id="name" name="name" placeholder="Например, Иван" required>
               </div>
               <div class="col-sm-6 col-email">
                 <label for="email">Введите Email</label><br>
-                <input type="text" id="email" name="email" placeholder="Например, example@gmail.com">
+                <input type="email" id="email" name="email" placeholder="Например, example@gmail.com" required>
               </div>
               <div class="col-12 col-message">
                 <label for="message">Напишите сообщение</label>
-                <textarea class="contact-message" name="message" id="message" placeholder='Например, "Хочу такой же сайт"'></textarea>
+                <textarea class="contact-message" name="message" id="message" placeholder='Например, "Хочу такой же сайт"' required></textarea>
               </div>
               <div class="col-12">
                 <button class="send-message" type="submit">Отправить сообщение</button>
