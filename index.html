@@ -42,7 +42,7 @@
                   <strong>Гусейнов Руслан</strong>
                 </h1>
                 <p class="main-discribe">
-                  Вестка и разработка сайтов <br> с нуля до результата
+                  Верстка и разработка сайтов <br> с нуля до результата
                 </p>
               </div>
             </div>
@@ -52,10 +52,10 @@
             <!-- buttons -->
             <div class="col-12 ">
               <div class="main-buttons">
-                <button class="main-button skills" data-toggle="modal" data-target="#skills">Навыки</button>
                 <button class="main-button portfolio" data-toggle="modal" data-target="#portfolio">Портфолио</button>
                 <button class="main-button resume" data-toggle="modal" data-target="#resume">Резюме</button>
                 <button class="main-button contacts" data-toggle="modal" data-target="#contacts">Контакты</button>
+                <button class="main-button feedback" data-toggle="modal" data-target="#feedback">Отзывы</button>
               </div>
             </div>
             <!-- line -->
@@ -73,12 +73,12 @@
   </main>
 
   <!-- MODELS -->
-  <!-- model skills -->
-  <div class="modal fade" id="skills" tabindex="-1" role="dialog" aria-labelledby="skillsLabel" aria-hidden="true">
+  <!-- model feedback -->
+  <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="skillsLabel">Мои навыки</h5>
+          <h5 class="modal-title" id="feedbackLabel">Отзывы</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true" class="close-skills-modal">&times;</span>
           </button>
@@ -147,22 +147,34 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="contactsLabel">Контакты и связь со мной</h5>
+          <h5 class="modal-title" id="contactsLabel">Контакты</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Продолжил сих сбить
-            предупредила, имени толку языкового агентство до страну?</p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Продолжил сих сбить
-            предупредила, имени толку языкового агентство до страну?</p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Продолжил сих сбить
-            предупредила, имени толку языкового агентство до страну?</p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Продолжил сих сбить
-            предупредила, имени толку языкового агентство до страну?</p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Продолжил сих сбить
-            предупредила, имени толку языкового агентство до страну?</p>
+          <form class="contacts-form" action="mail.php" method="POST">
+            <input type="hidden" name="project_name" value="Web-Студия Руслана Гусейнова">
+            <input type="hidden" name="admin_email" value="airkross123@gmail.com">
+            <input type="hidden" name="form_subject" value="Форма контактов">
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="name">Введите имя</label><br>
+                <input type="text" id="name" placeholder="Например, Иван">
+              </div>
+              <div class="col-sm-6 col-email">
+                <label for="email">Введите Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Например, example@gmail.com">
+              </div>
+              <div class="col-12 col-message">
+                <label for="message">Напишите сообщение</label>
+                <textarea class="contact-message" name="message" id="message" placeholder='Например, "Хочу такой же сайт"'></textarea>
+              </div>
+              <div class="col-12">
+                <button class="send-message" type="submit">Отправить сообщение</button>
+              </div>
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
           <span>Руслан Гусейнов Web design and developing</span>

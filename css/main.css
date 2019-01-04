@@ -131,7 +131,7 @@ html {
   border-bottom: 0.1rem dashed white;
 }
 
-/* model skills */
+/* models */
 .modal-dialog {
   max-width: 910px;
   padding: 0 1rem;
@@ -154,6 +154,10 @@ html {
   font-size: 3rem;
   text-transform: uppercase;
   border-bottom: 0.3rem dashed white;
+}
+
+.modal-body {
+  padding: 1rem 2rem 2rem;
 }
 
 .close {
@@ -183,27 +187,107 @@ html {
   transition: color .3s ease;
 }
 
-.close-down:hover{
+.close-down:hover {
   color: rgba(255, 255, 255, 1);
 }
 
-.modal-footer span{
+.modal-footer span {
   text-align: center;
   margin-left: auto;
   font-size: 1.5rem;
   font-weight: 700;
   opacity: .7;
 }
-.modal-footer>:not(:last-child){
+
+.modal-footer>:not(:last-child) {
   margin-right: auto;
 }
+
+/* modal contact */
+.contacts-form label {
+  text-transform: uppercase;
+  opacity: .8;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.contacts-form input {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem;
+  opacity: .8;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border: 0.2rem solid rgba(255, 255, 255, .5);
+  transition: border .3s ease;
+}
+
+.contacts-form input:focus {
+  outline: none;
+  border: 0.2rem solid rgba(255, 255, 255, 1);
+}
+
+
+
+.col-message {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.contact-message {
+  width: 100%;
+  resize: none;
+  height: 200px;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem;
+  opacity: .8;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border: 0.2rem solid rgba(255, 255, 255, .5);
+  transition: border .3s ease;
+}
+
+.contact-message:focus {
+  outline: none;
+  border: 0.2rem solid rgba(255, 255, 255, 1);
+}
+
+.send-message {
+  border-radius: 1rem;
+  padding: 1.3rem 1.5rem;
+  opacity: .8;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: .05rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border: 0.2rem solid rgba(255, 255, 255, .5);
+  transition: border .3s ease;
+  cursor: pointer;
+}
+
+.send-message:focus {
+  outline: none;
+}
+
+.send-message:hover {
+  opacity: 1;
+  border: 0.2rem solid rgba(255, 255, 255, 1);
+}
+
 
 /* media */
 @media screen and (max-width:575px) {
   html {
     font-size: 9px;
   }
-
+  .col-email {
+    padding-top: 1.3rem;
+  }
   .main-button {
     width: 50%;
   }
