@@ -135,6 +135,7 @@ html {
 .modal-dialog {
   max-width: 910px;
   padding: 0 1rem;
+
 }
 
 .modal-content {
@@ -191,12 +192,28 @@ html {
   color: rgba(255, 255, 255, 1);
 }
 
-.modal-footer span {
-  text-align: center;
+.modal-footer span{
   margin-left: auto;
-  font-size: 1.5rem;
-  font-weight: 700;
-  opacity: .7;
+}
+
+.modal-footer span a {
+  text-decoration: none;
+  margin-right: 2.5rem;
+}
+
+.modal-footer span a:last-child {
+  margin-right: 0;
+}
+
+.modal-footer span .fa {
+  text-align: center;
+  color: rgba(255, 255, 255, .5);
+  font-size: 2.3rem;
+  transition: color .3s ease;
+}
+
+.modal-footer span .fa:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-footer>:not(:last-child) {
@@ -229,8 +246,6 @@ html {
   outline: none;
   border: 0.2rem solid rgba(255, 255, 255, 1);
 }
-
-
 
 .col-message {
   padding-top: 1.3rem;
@@ -285,9 +300,11 @@ html {
   html {
     font-size: 9px;
   }
+
   .col-email {
     padding-top: 1.3rem;
   }
+
   .main-button {
     width: 50%;
   }
