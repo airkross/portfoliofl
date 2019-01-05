@@ -74,7 +74,7 @@
 
   <!-- MODELS -->
   <!-- model feedback -->
-  <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true" data-keyboard="false">
+  <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true" data-keyboard="false" data-backdrop="false">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -95,7 +95,7 @@
     </div>
   </div>
   <!-- model portfolio -->
-  <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="portfolioLabel" aria-hidden="true" data-keyboard="false">
+  <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="portfolioLabel" aria-hidden="true" data-keyboard="false" data-backdrop="false">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -118,7 +118,7 @@
     </div>
   </div>
   <!-- resume -->
-  <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="resumeLabel" aria-hidden="true" data-keyboard="false">
+  <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="resumeLabel" aria-hidden="true" data-keyboard="false" data-backdrop="false">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -143,7 +143,7 @@
     </div>
   </div>
   <!-- contacts -->
-  <div class="modal fade" id="contacts" tabindex="-1" role="dialog" aria-labelledby="contactsLabel" aria-hidden="true" data-keyboard="false">
+  <div class="modal fade" id="contacts" tabindex="-1" role="dialog" aria-labelledby="contactsLabel" aria-hidden="true" data-keyboard="false" data-backdrop="false">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -213,14 +213,15 @@
         $(".header").fadeIn(400);
       });
     });
-    $(document).mouseup(function (e) { // событие клика по веб-документу
-      var modalContent = $('.modal-content'); // тут указываем класс элемента
-      if (!modalContent.is(e.target) // если клик был не по нашему блоку
-        &&
-        modalContent.has(e.target).length === 0) { // и не по его дочерним элементам
-        $(".header").fadeIn(400); // скрываем его
-      }
-    });
+    // фон модального окна
+    // $(document).mouseup(function (e) { // событие клика по веб-документу
+    //   var modalContent = $('.modal-content'); // тут указываем класс элемента
+    //   if (!modalContent.is(e.target) // если клик был не по нашему блоку
+    //     &&
+    //     modalContent.has(e.target).length === 0) { // и не по его дочерним элементам
+    //     $(".header").fadeIn(400); // скрываем его
+    //   }
+    // });
     
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
