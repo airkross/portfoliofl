@@ -108,7 +108,8 @@ html {
   transition: background-color .3s ease;
 }
 
-button:focus, button span:focus{
+button:focus,
+button span:focus {
   outline: none;
 }
 
@@ -131,7 +132,11 @@ button:focus, button span:focus{
   opacity: 1;
 }
 
-.copyright-text span {
+.copyright-text span {}
+
+.copyright-text span a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .8);
   border-bottom: 0.1rem dashed white;
 }
 
@@ -179,7 +184,7 @@ button:focus, button span:focus{
   outline: none;
 }
 
-.modal-footer p{
+.modal-footer p {
   text-transform: uppercase;
   opacity: .7;
   font-size: 1.2rem;
@@ -190,6 +195,8 @@ button:focus, button span:focus{
   margin-top: 1rem;
   padding: 0 1rem;
 }
+
+
 
 .close-down {
   background: none;
@@ -208,7 +215,7 @@ button:focus, button span:focus{
   color: rgba(255, 255, 255, 1);
 }
 
-.modal-footer span{
+.modal-footer span {
   margin-left: auto;
 }
 
@@ -332,3 +339,4 @@ button:focus, button span:focus{
     font-size: 8px;
   }
 }
+

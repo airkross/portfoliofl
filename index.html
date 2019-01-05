@@ -55,9 +55,9 @@
             <div class="col-12 ">
               <div class="main-buttons">
                 <button class="main-button portfolio" data-toggle="modal" data-target="#portfolio">Портфолио</button>
+                <button class="main-button skills" data-toggle="modal" data-target="#skills">Что умею</button>
                 <button class="main-button resume" data-toggle="modal" data-target="#resume">Резюме</button>
                 <button class="main-button contacts" data-toggle="modal" data-target="#contacts">Контакты</button>
-                <button class="main-button feedback" data-toggle="modal" data-target="#feedback">Отзывы</button>
               </div>
             </div>
             <!-- line -->
@@ -65,7 +65,8 @@
             <div class="col-6"></div>
             <div class="col-12 copyright-flex">
               <div class="copyright">
-                <p class="copyright-text"><span>Руслан Гусейнов Web design and developing</span></p>
+                <p class="copyright-text"><span>Руслан Гусейнов Web design and developing <br><a href="tel:">+38 (071)
+                      453 84 95</a></span></p>
               </div>
             </div>
           </div>
@@ -75,13 +76,13 @@
   </main>
 
   <!-- MODELS -->
-  <!-- model feedback -->
-  <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true"
+  <!-- model skills -->
+  <div class="modal fade" id="skills" tabindex="-1" role="dialog" aria-labelledby="skillsLabel" aria-hidden="true"
     data-keyboard="false" data-backdrop="false">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="feedbackLabel">Отзывы</h5>
+          <h5 class="modal-title" id="skillsLabel">Что умею</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true" class="close-skills-modal">&times;</span>
           </button>
@@ -116,6 +117,7 @@
       </div>
     </div>
   </div>
+
   <!-- model portfolio -->
   <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="portfolioLabel" aria-hidden="true"
     data-keyboard="false" data-backdrop="false">
@@ -159,6 +161,7 @@
       </div>
     </div>
   </div>
+
   <!-- resume -->
   <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="resumeLabel" aria-hidden="true"
     data-keyboard="false" data-backdrop="false">
@@ -204,6 +207,7 @@
       </div>
     </div>
   </div>
+
   <!-- contacts -->
   <div class="modal fade" id="contacts" tabindex="-1" role="dialog" aria-labelledby="contactsLabel" aria-hidden="true"
     data-keyboard="false" data-backdrop="false">
@@ -264,16 +268,31 @@
       </div>
     </div>
   </div>
+
   <!-- js -->
   <script src="js/script.js"></script>
   <!-- js BS -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <!-- prealoader -->
+  <!-- script JQuery -->
   <script>
+    // modals
     $(document).ready(function () {
+      // preloader
+      // NProgress.start();
+      // NProgress.set(0.5);
+      // setTimeout(function(){
+      //   NProgress.done();
+      // }, 1000);
+      // modals
       var modalContent = $(".modal-content");
       //skills
-      $(".feedback").click(function () {
+      $(".skills").click(function () {
         $(".header").fadeOut(500);
       });
       //portfolio
@@ -306,10 +325,47 @@
     //   }
     // });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  <style type="text/css">
+    #hellopreloader>p {
+      display: none;
+    }
+
+    #hellopreloader_preload {
+      display: block;
+      position: fixed;
+      z-index: 99999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 1000px;
+      background: #2C3E50 url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
+      background-size: 126px;
+    }
+  </style>
+  <div id="hellopreloader">
+    <div id="hellopreloader_preload"></div>
+    <p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p>
+  </div>
+  <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+
+    function fadeOutnojquery(el) {
+      el.style.opacity = 1;
+      var interhellopreloader = setInterval(function () {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) {
+          clearInterval(interhellopreloader);
+          hellopreloader.style.display = "none";
+        }
+      }, 16);
+    }
+    window.onload = function () {
+      setTimeout(function () {
+        fadeOutnojquery(hellopreloader);
+      }, 500);
+    };
+  </script>
 </body>
 
 </html>
