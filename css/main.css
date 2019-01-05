@@ -141,6 +141,9 @@ button span:focus {
 }
 
 /* models */
+.modal{
+  padding-left: 0;
+}
 .modal-dialog {
   max-width: 910px;
   padding: 0 1rem;
@@ -317,8 +320,90 @@ button span:focus {
   border: 0.2rem solid rgba(255, 255, 255, 1);
 }
 
+/* Skills */
+/* cards */
+.card-container {
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+/* card-top */
+.card-top {
+  text-align: center;
+  border-bottom: 1px solid white;
+  min-height: 13rem;
+}
+
+.card-container .card-top h1 {
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: .2rem;
+  transition: color .3s ease;
+}
+
+.card-container:hover .card-top h1 {
+  color: rgba(255, 255, 255, 1);
+}
+
+.card-container .card-top p {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, .5);
+  font-weight: 700;
+  transition: color .3s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.card-container:hover .card-top p {
+  color: rgba(255, 255, 255, 1);
+}
+/* card-center */
+.card-center{
+  margin-top: 1rem;
+}
+
+.card-center p {
+  font-size: 2rem;
+}
+
+.card-center ul li {
+  font-size: 1.7rem;
+  letter-spacing: 0.015rem;
+}
+
+.card-bottom {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.card-bottom .order-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  height: 4rem;
+  border: 1px solid white;
+  border-radius: 2.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  transition: color .3s ease;
+}
+
+.card-container:hover .card-bottom .order-btn {
+  color: white;
+}
 
 /* media */
+@media screen and (max-width:991px) {
+  .slills-card {
+    margin-bottom: 2rem;
+  }
+  .card-bottom .order-btn{
+    width: 50%;
+  }
+}
+
 @media screen and (max-width:575px) {
   html {
     font-size: 9px;
@@ -339,4 +424,3 @@ button span:focus {
     font-size: 8px;
   }
 }
-
