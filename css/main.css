@@ -188,6 +188,7 @@ button:focus, button span:focus{
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 .close-down {
