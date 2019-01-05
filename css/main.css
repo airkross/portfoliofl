@@ -108,6 +108,10 @@ html {
   transition: background-color .3s ease;
 }
 
+button:focus, button span:focus{
+  outline: none;
+}
+
 /* copyright */
 .copyright {
   max-width: 48rem;
