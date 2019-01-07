@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -18,6 +18,25 @@
   <link rel="stylesheet" href="libs/animate.css">
   <!-- css -->
   <link rel="stylesheet" href="css/main.css">
+  <!-- preloader css -->
+  <style>
+    #hellopreloader>p {
+        display: none;
+      }
+  
+    #hellopreloader_preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 100%;
+        background: #2C3E50 url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
+        background-size: 126px;
+    }
+  </style>
 </head>
 
 <body>
@@ -144,7 +163,7 @@
             <div class="hello-text">
               <span class="hello-title">Здравствуй, уважаемый заказчик!</span>
               <br>
-              <p>
+              <div class="hello-text-body">
                 <p class="position-left indent">
                   Прежде чем рассказать о том что я умею,
                   для улучшения нашего понимания друг с другом в общении,
@@ -201,7 +220,7 @@
                   Ниже представлен КРАТКИЙ ряд моих основных навыков. В случаи если в перечне отсутствует то что тебе
                   необходимо, просто напиши :)
                 </p>
-              </p>
+              </div>
             </div>
           </div>
 
@@ -223,7 +242,7 @@
                 </div>
                 <!-- card center -->
                 <div class="card-center">
-                  <p>
+                  <div class="card-center-flex-height">
                     <i> - Срок выполнения работы – от 5 дней - </i>
                     <ul>
                       <li>Адаптивная верстка;</li>
@@ -232,7 +251,7 @@
                       <li>Панель администратора;</li>
                       <li>И другое.</li>
                     </ul>
-                  </p>
+                  </div>
                 </div>
                 <!-- card bottom -->
                 <div class="card-bottom">
@@ -250,7 +269,7 @@
                 </div>
                 <!-- card center -->
                 <div class="card-center">
-                  <p>
+                  <div class="card-center-flex-height">
                     <i> - Срок выполнения работы – от 7 дней - </i>
                     <ul>
                       <li>Адаптивная верстка;</li>
@@ -259,7 +278,7 @@
                       <li>Панель администратора;</li>
                       <li>И другое.</li>
                     </ul>
-                  </p>
+                  </div>
                 </div>
                 <!-- card bottom -->
                 <div class="card-bottom">
@@ -277,7 +296,7 @@
                 </div>
                 <!-- card center -->
                 <div class="card-center">
-                  <p>
+                  <div class="card-center-flex-height">
                     <i> - Срок выполнения работы – от 14 дней - </i>
                     <ul>
                       <li>Адаптивная верстка;</li>
@@ -286,7 +305,7 @@
                       <li>Панель администратора;</li>
                       <li>И другое.</li>
                     </ul>
-                  </p>
+                  </div>
                 </div>
                 <!-- card bottom -->
                 <div class="card-bottom">
@@ -520,6 +539,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
+  <!-- preloader html -->
+  <div id="hellopreloader">
+    <div id="hellopreloader_preload"></div>
+    <p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p>
+  </div>
+
   <!-- script JQuery -->
   <script>
     // modals
@@ -558,32 +583,8 @@
     //     $(".header").fadeIn(400); // скрываем его
     //   }
     // });
-  </script>
 
-  <!-- prealoader -->
-  <style type="text/css">
-    #hellopreloader>p {
-      display: none;
-    }
-
-    #hellopreloader_preload {
-      display: block;
-      position: fixed;
-      z-index: 99999;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      min-width: 100%;
-      background: #2C3E50 url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
-      background-size: 126px;
-    }
-  </style>
-  <div id="hellopreloader">
-    <div id="hellopreloader_preload"></div>
-    <p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p>
-  </div>
-  <script type="text/javascript">
+    // preloader JS
     var hellopreloader = document.getElementById("hellopreloader_preload");
 
     function fadeOutnojquery(el) {
@@ -599,7 +600,7 @@
     window.onload = function () {
       setTimeout(function () {
         fadeOutnojquery(hellopreloader);
-      }, 10);
+      }, 1000);
     };
   </script>
 </body>

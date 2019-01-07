@@ -247,14 +247,14 @@ button span:focus {
 
 /* Skills */
 /* hello text */
-.block-hello-text{
+.block-hello-text {
   border: .1rem solid white;
   border-radius: .5rem;
   margin-bottom: 5rem;
   padding: 0 3rem 3rem;
 }
 
-.title-hello-text{
+.title-hello-text {
   text-align: center;
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -262,36 +262,40 @@ button span:focus {
   margin-top: .3rem;
 }
 
-.title-hello-text span{
+.title-hello-text span {
   border-top: .1rem solid white;
   border-bottom: .1rem solid white;
 }
 
-.hello-text{
+.hello-text {
   padding-top: 3rem;
   font-size: 1.5rem;
   text-align: center;
   line-height: 3rem;
 }
 
-.hello-title{
+.hello-title {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
-.hello-text .position-left{
+.hello-text-body {
+  margin-top: 1rem;
+}
+
+.hello-text .position-left {
   text-align: left;
   letter-spacing: .08rem;
   text-shadow: 1px 0;
 }
 
-.indent{
+.indent {
   text-indent: 4rem;
 }
 
 /* cards */
-.space-bottom-cards{
+.space-bottom-cards {
   margin-bottom: 5rem;
 }
 
@@ -352,7 +356,7 @@ button span:focus {
   margin-top: 1rem;
 }
 
-.card-center p {
+.card-center .card-center-flex-height {
   font-size: 2rem;
 }
 
@@ -406,7 +410,7 @@ button span:focus {
   transition: color .3s ease;
 }
 
-.extra-container:hover .fa{
+.extra-container:hover .fa {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -415,7 +419,7 @@ button span:focus {
   margin-top: 1rem;
 }
 
-.extra-content-title{
+.extra-content-title {
   min-height: 4rem;
 }
 
@@ -425,7 +429,7 @@ button span:focus {
   transition: color .3s ease;
 }
 
-.extra-container:hover h3{
+.extra-container:hover h3 {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -437,7 +441,7 @@ button span:focus {
   transition: color .3s ease;
 }
 
-.extra-container:hover p{
+.extra-container:hover p {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -528,8 +532,8 @@ button span:focus {
   }
 }
 
-@media screen and (max-width:767px){
-  .extra-line .line{
+@media screen and (max-width:767px) {
+  .extra-line .line {
     border-right: none;
   }
 }
@@ -547,7 +551,7 @@ button span:focus {
     width: 50%;
   }
 
-  .extra-line .line{
+  .extra-line .line {
     border-right: 0.1rem solid white;
   }
 }
