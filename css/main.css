@@ -445,6 +445,76 @@ button span:focus {
   color: rgba(255, 255, 255, 1);
 }
 
+/* modal resume */
+/* resume header */
+.resume-header {
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.resume-photo {
+  margin-bottom: 1rem;
+}
+
+.resume-photo img {
+  width: 15rem;
+  border-radius: 50%;
+  box-shadow: 0 0 .5rem rgba(255, 255, 255, .4);
+}
+
+.resume-header h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.resume-header h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.resume-body {
+  padding-top: 1rem;
+}
+
+.resume-body h1 {
+  text-align: center;
+}
+
+.card-resume-header {
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-bottom: .1rem solid white;
+}
+
+
+.card-resume-body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.card-resume-body-text {
+  margin-left: 2rem;
+}
+
+.card-resume-body-text {
+  font-size: 1.5rem;
+}
+
+.keys-skills-wrap {
+  text-align: center;
+  padding: 0;
+}
+
+.keys-skills-item {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  border: .1rem solid white;
+  border-radius: .5rem;
+}
+
 /* modal contact */
 .contacts-form label {
   text-transform: uppercase;
@@ -535,6 +605,9 @@ button span:focus {
 @media screen and (max-width:767px) {
   .extra-line .line {
     border-right: none;
+  }
+
+  .card-resume-header {
   }
 }
 
