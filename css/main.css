@@ -607,7 +607,9 @@ button span:focus {
     border-right: none;
   }
 
-  .card-resume-header {
+  .card-resume {
+    border-bottom: 1px solid white;
+    padding-bottom: 3rem;
   }
 }
 
