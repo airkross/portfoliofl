@@ -365,25 +365,6 @@ button span:focus {
   letter-spacing: 0.015rem;
 }
 
-.card-bottom {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.card-bottom .order-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 70%;
-  height: 4rem;
-  border: 1px solid white;
-  border-radius: 2.6rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  transition: color .3s ease;
-}
-
 .card-container:hover .card-bottom .order-btn {
   color: white;
 
@@ -634,5 +615,9 @@ button span:focus {
 @media screen and (max-width:359px) {
   html {
     font-size: 8px;
+  }
+
+  .close-down {
+    padding: 1.2rem 2rem;
   }
 }
