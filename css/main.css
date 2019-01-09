@@ -245,6 +245,70 @@ button span:focus {
   margin-right: auto;
 }
 
+/* Portfolio */
+/* Тобовое меню */
+.nav-tabs .nav-link {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.nav-tabs a {
+  color: white;
+  font-size: 2rem;
+}
+
+/* карточки проектов */
+.list-portfolio a {
+  overflow: hidden;
+}
+
+.list-portfolio a img {
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.list-portfolio a:hover img {
+  transform: scale(1.5);
+}
+
+
+/* Аккордион */
+.accordion {
+  display: none;
+}
+
+.accordion .card {
+  background-color: rgba(0, 0, 0, .3);
+  border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+.accordion .card .card-header {
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.btn-link {
+  font-weight: 700;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.btn-link:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.btn-link.focus,
+.btn-link:focus {
+  text-decoration: none;
+}
+
+.accordion .card-header .collapsed {
+  color: rgba(255, 255, 255, .7);
+}
+
+
+
+
 /* Skills */
 /* hello text */
 .block-hello-text {
@@ -591,6 +655,18 @@ button span:focus {
   .card-resume {
     border-bottom: 1px solid white;
     padding-bottom: 3rem;
+  }
+
+  .accordion {
+    display: block;
+  }
+
+  #portfolio .modal-body .nav {
+    display: none;
+  }
+
+  .tab-content>.active {
+    display: none;
   }
 }
 
