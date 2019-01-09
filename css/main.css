@@ -23,8 +23,12 @@ html {
   min-height: 100vh;
   max-height: 100%;
   background-color: rgba(0, 0, 0, .4);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* photo */
@@ -105,6 +109,7 @@ html {
 
 .main-button:hover {
   background-color: rgba(255, 255, 255, .1);
+  -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
 }
 
@@ -175,6 +180,7 @@ button span:focus {
 .close {
   font-size: 3.5rem;
   font-weight: 400;
+  -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease;
 }
 
@@ -210,6 +216,7 @@ button span:focus {
   font-size: 1.5rem;
   font-weight: 700;
   color: rgba(255, 255, 255, .7);
+  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 
@@ -234,6 +241,7 @@ button span:focus {
   text-align: center;
   color: rgba(255, 255, 255, .5);
   font-size: 2.3rem;
+  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 
@@ -262,7 +270,7 @@ button span:focus {
 }
 
 /* карточки проектов */
-.list-portfolio h6{
+.list-portfolio h6 {
   display: none;
 }
 
@@ -285,7 +293,9 @@ button span:focus {
   line-height: 3rem;
   color: rgba(255, 255, 255, 0);
   text-decoration: none;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: color .5s ease;
   transition: color .5s ease;
   z-index: 9999;
   font-size: 1.3rem;
@@ -303,11 +313,13 @@ button span:focus {
 .list-portfolio a img {
   width: 100%;
   border-radius: .5rem;
+  -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
 .list-portfolio a:hover img {
-  transform: scale(1.1, 1.15);
+  -webkit-transform: scale(1.1, 1.15);
+          transform: scale(1.1, 1.15);
   opacity: .7;
 }
 
@@ -317,7 +329,7 @@ button span:focus {
   display: none;
 }
 
-.accordion h6{
+.accordion h6 {
   display: none;
 }
 
@@ -438,6 +450,7 @@ button span:focus {
 .card-container .card-top h1 {
   color: rgba(255, 255, 255, .5);
   letter-spacing: .2rem;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -450,6 +463,7 @@ button span:focus {
   font-size: 4rem;
   color: rgba(255, 255, 255, .5);
   font-weight: 700;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   padding: 0;
   margin: 0;
@@ -497,6 +511,7 @@ button span:focus {
 .extra-skills .extra-container .fa {
   font-size: 10rem;
   color: rgba(255, 255, 255, .7);
+  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 
@@ -516,6 +531,7 @@ button span:focus {
 .extra-content h3 {
   font-weight: 700;
   color: rgba(255, 255, 255, .7);
+  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 
@@ -528,6 +544,7 @@ button span:focus {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 700;
+  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 
@@ -549,7 +566,8 @@ button span:focus {
 .resume-photo img {
   width: 15rem;
   border-radius: 50%;
-  box-shadow: 0 0 .5rem rgba(255, 255, 255, .4);
+  -webkit-box-shadow: 0 0 .5rem rgba(255, 255, 255, .4);
+          box-shadow: 0 0 .5rem rgba(255, 255, 255, .4);
 }
 
 .resume-header h1 {
@@ -572,9 +590,15 @@ button span:focus {
 
 .card-resume-header {
   min-height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 3rem;
   border-bottom: .1rem solid white;
 }
@@ -624,6 +648,7 @@ button span:focus {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border: 0.2rem solid rgba(255, 255, 255, .5);
+  -webkit-transition: border .3s ease;
   transition: border .3s ease;
 }
 
@@ -648,6 +673,7 @@ button span:focus {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border: 0.2rem solid rgba(255, 255, 255, .5);
+  -webkit-transition: border .3s ease;
   transition: border .3s ease;
 }
 
@@ -666,6 +692,7 @@ button span:focus {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border: 0.2rem solid rgba(255, 255, 255, .5);
+  -webkit-transition: border .3s ease;
   transition: border .3s ease;
   cursor: pointer;
 }
@@ -701,9 +728,11 @@ button span:focus {
     border-bottom: 1px solid white;
     padding-bottom: 3rem;
   }
+
   .accordion h4 {
     display: none;
   }
+
   .list-portfolio h6 {
     display: block;
     position: absolute;
@@ -712,7 +741,8 @@ button span:focus {
     width: 79%;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
-    transform: translate(-50%, -90%);
+    -webkit-transform: translate(-50%, -90%);
+            transform: translate(-50%, -90%);
     z-index: 9999;
     font-size: 1.3rem;
     text-align: center;
@@ -757,13 +787,14 @@ button span:focus {
     width: 79%;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
-    transform: translate(-50%, -90%);
+    -webkit-transform: translate(-50%, -90%);
+            transform: translate(-50%, -90%);
     z-index: 9999;
     font-size: 1.3rem;
     text-align: center;
     line-height: 1.5rem;
   }
-  
+
 }
 
 @media screen and (max-width:359px) {
