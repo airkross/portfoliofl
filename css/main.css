@@ -262,6 +262,10 @@ button span:focus {
 }
 
 /* карточки проектов */
+.list-portfolio h6{
+  display: none;
+}
+
 .list-portfolio a {
   overflow: hidden;
   width: 100%;
@@ -302,8 +306,6 @@ button span:focus {
   transition: all .5s ease;
 }
 
-
-
 .list-portfolio a:hover img {
   transform: scale(1.1, 1.15);
   opacity: .7;
@@ -312,6 +314,10 @@ button span:focus {
 
 /* Аккордион */
 .accordion {
+  display: none;
+}
+
+.accordion h6{
   display: none;
 }
 
@@ -328,6 +334,7 @@ button span:focus {
   font-weight: 700;
   font-size: 2rem;
   color: rgba(255, 255, 255, 1);
+  width: 100%;
 }
 
 .btn-link:hover {
@@ -694,6 +701,23 @@ button span:focus {
     border-bottom: 1px solid white;
     padding-bottom: 3rem;
   }
+  .accordion h4 {
+    display: none;
+  }
+  .list-portfolio h6 {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 79%;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transform: translate(-50%, -90%);
+    z-index: 9999;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5rem;
+  }
 }
 
 @media screen and (max-width:575px) {
@@ -724,6 +748,22 @@ button span:focus {
   .tab-content>.active {
     display: none;
   }
+
+  .accordion h6 {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 79%;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transform: translate(-50%, -90%);
+    z-index: 9999;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  
 }
 
 @media screen and (max-width:359px) {
