@@ -280,7 +280,6 @@ button span:focus {
   min-height: 1rem;
   display: block;
   background-color: #000;
-  border: .1rem solid white;
   border-radius: .6rem;
   position: relative;
 }
