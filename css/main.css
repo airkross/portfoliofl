@@ -257,18 +257,56 @@ button span:focus {
   font-size: 2rem;
 }
 
+.tab-content {
+  padding-top: 2rem;
+}
+
 /* карточки проектов */
 .list-portfolio a {
   overflow: hidden;
+  width: 100%;
+  min-height: 1rem;
+  display: block;
+  background-color: #000;
+  border: .1rem solid white;
+  border-radius: .6rem;
+  position: relative;
+}
+
+.list-portfolio h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 79%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  transition: color .5s ease;
+  z-index: 9999;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.list-portfolio a:hover h4 {
+  color: rgba(255, 255, 255, 1);
+}
+
+.portfolio-item {
+  margin-bottom: 2rem;
 }
 
 .list-portfolio a img {
   width: 100%;
   border-radius: .5rem;
+  transition: all .5s ease;
 }
 
+
+
 .list-portfolio a:hover img {
-  transform: scale(1.5);
+  transform: scale(1.1, 1.15);
+  opacity: .7;
 }
 
 
@@ -656,18 +694,6 @@ button span:focus {
     border-bottom: 1px solid white;
     padding-bottom: 3rem;
   }
-
-  .accordion {
-    display: block;
-  }
-
-  #portfolio .modal-body .nav {
-    display: none;
-  }
-
-  .tab-content>.active {
-    display: none;
-  }
 }
 
 @media screen and (max-width:575px) {
@@ -685,6 +711,18 @@ button span:focus {
 
   .extra-line .line {
     border-right: 0.1rem solid white;
+  }
+
+  .accordion {
+    display: block;
+  }
+
+  #portfolio .modal-body .nav {
+    display: none;
+  }
+
+  .tab-content>.active {
+    display: none;
   }
 }
 
