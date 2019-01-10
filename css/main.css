@@ -23,12 +23,14 @@ html {
   min-height: 100vh;
   max-height: 100%;
   background-color: rgba(0, 0, 0, .4);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+}
+
+.main-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /* photo */
