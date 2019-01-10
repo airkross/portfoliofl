@@ -36,6 +36,30 @@
         background: #2C3E50 url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
         background-size: 126px;
     }
+
+    .text-block {
+  width: 250px;
+  margin: 50px;
+}
+
+#go-top {
+  position: fixed; 
+  bottom: 25px; 
+  right: 70px;
+  text-align: center;
+  cursor:pointer; 
+  display:none;
+  width: 80px;
+  height: 30px;
+  background: #c0c0c0;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+#go-top:hover {
+  background: #333;
+  color: #fff;
+}
   </style>
 </head>
 
@@ -1042,7 +1066,7 @@
       </div>
     </div>
   </div>
-
+  
   <!-- preloader html -->
   <div id="hellopreloader">
     <div id="hellopreloader_preload"></div>
@@ -1061,6 +1085,29 @@
 
   <!-- script JQuery -->
   <script>
+    // scroll to top
+    $(document).ready(function(){
+  $('.modal-heade').append('<a href="#skills" id="go-top" title="Вверх">Вверх</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});
     // modals
     $(document).ready(function () {
       var modalContent = $(".modal-content");
