@@ -375,7 +375,6 @@ button span:focus {
 .block-hello-text {
   border: .1rem solid white;
   border-radius: .5rem;
-  margin-bottom: 5rem;
   padding: 0 3rem 3rem;
 }
 
@@ -487,6 +486,15 @@ button span:focus {
   font-size: 2rem;
 }
 
+.card-center-flex-height i{
+  display: block;
+  min-height: 15rem;
+}
+
+.card-center-flex-height ul{
+  min-height: 26rem;
+}
+
 .card-center ul li {
   font-size: 1.7rem;
   letter-spacing: 0.015rem;
@@ -500,6 +508,7 @@ button span:focus {
 /* extra skills */
 .extra-skills {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .space-bottom {
