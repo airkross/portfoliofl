@@ -24,16 +24,16 @@ html {
 .header {
   min-height: 100vh;
   max-height: 100%;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .5);
   position: relative;
 }
 
-.main-wrapper{
+.main-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* photo */
@@ -298,7 +298,7 @@ button span:focus {
   color: rgba(255, 255, 255, 0);
   text-decoration: none;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-transition: color .5s ease;
   transition: color .5s ease;
   z-index: 9999;
@@ -323,7 +323,7 @@ button span:focus {
 
 .list-portfolio a:hover img {
   -webkit-transform: scale(1.1, 1.15);
-          transform: scale(1.1, 1.15);
+  transform: scale(1.1, 1.15);
   opacity: .7;
 }
 
@@ -447,7 +447,7 @@ button span:focus {
 .card-top {
   text-align: center;
   border-bottom: 1px solid white;
-  min-height: 13rem;
+  min-height: 7rem;
 }
 
 .card-container .card-top h1 {
@@ -486,12 +486,12 @@ button span:focus {
   font-size: 2rem;
 }
 
-.card-center-flex-height i{
+.card-center-flex-height i {
   display: block;
   min-height: 15rem;
 }
 
-.card-center-flex-height ul{
+.card-center-flex-height ul {
   min-height: 26rem;
 }
 
@@ -533,7 +533,7 @@ button span:focus {
 }
 
 .extra-content {
-  min-height: 8rem;
+  min-height: 5rem;
   margin-top: 1rem;
 }
 
@@ -580,7 +580,7 @@ button span:focus {
   width: 15rem;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 .5rem rgba(255, 255, 255, .4);
-          box-shadow: 0 0 .5rem rgba(255, 255, 255, .4);
+  box-shadow: 0 0 .5rem rgba(255, 255, 255, .4);
 }
 
 .resume-header h1 {
@@ -607,11 +607,11 @@ button span:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 3rem;
   border-bottom: .1rem solid white;
 }
@@ -628,6 +628,33 @@ button span:focus {
 
 .card-resume-body-text {
   font-size: 1.5rem;
+}
+
+.card-resume__download {
+  text-align: right;
+  padding-right: 8px;
+  padding-top: 15px;
+}
+
+.card-resume__download a{
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;  
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 1);
+  opacity: .8;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+
+.card-resume__download a:hover{
+  opacity: 1;
+}
+
+.card-resume__download a i{
+  vertical-align: middle;
 }
 
 .keys-skills-wrap {
@@ -737,9 +764,15 @@ button span:focus {
     border-right: none;
   }
 
-  .card-resume {
-    border-bottom: 1px solid white;
-    padding-bottom: 3rem;
+  .card-resume__download a{
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  .card-resume__download{
+    padding-left: 8px;
+    padding-top: 0;
   }
 
   .accordion h4 {
@@ -755,7 +788,7 @@ button span:focus {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     -webkit-transform: translate(-50%, -90%);
-            transform: translate(-50%, -90%);
+    transform: translate(-50%, -90%);
     z-index: 9999;
     font-size: 1.3rem;
     text-align: center;
@@ -801,7 +834,7 @@ button span:focus {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     -webkit-transform: translate(-50%, -90%);
-            transform: translate(-50%, -90%);
+    transform: translate(-50%, -90%);
     z-index: 9999;
     font-size: 1.3rem;
     text-align: center;
