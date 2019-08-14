@@ -89,7 +89,7 @@ html {
 .main-buttons {
   margin: 0 auto;
   text-align: center;
-  max-width: 48rem;
+  max-width: 38rem;
   border: 3px solid rgba(255, 255, 255, .8);
   border-radius: 0.5rem;
 }
@@ -104,7 +104,8 @@ html {
   padding: 0;
   margin: -0.2rem;
   cursor: pointer;
-  width: 25%;
+  max-width: 33.333333333%;
+  width: 100%;
   min-height: 5rem;
   border-left: none;
   border-right: none;
@@ -630,16 +631,20 @@ button span:focus {
   font-size: 1.5rem;
 }
 
+.card-resume-body-text strong {
+  text-transform: uppercase;
+}
+
 .card-resume__download {
   text-align: right;
   padding-right: 8px;
   padding-top: 15px;
 }
 
-.card-resume__download a{
+.card-resume__download a {
   color: white;
   text-decoration: none;
-  padding: 15px 20px;  
+  padding: 15px 20px;
   font-size: 14px;
   text-transform: uppercase;
   border: 2px solid rgba(255, 255, 255, 1);
@@ -649,11 +654,11 @@ button span:focus {
 }
 
 
-.card-resume__download a:hover{
+.card-resume__download a:hover {
   opacity: 1;
 }
 
-.card-resume__download a i{
+.card-resume__download a i {
   vertical-align: middle;
 }
 
@@ -764,13 +769,13 @@ button span:focus {
     border-right: none;
   }
 
-  .card-resume__download a{
+  .card-resume__download a {
     display: block;
     text-align: center;
     border: 1px solid white;
   }
 
-  .card-resume__download{
+  .card-resume__download {
     padding-left: 8px;
     padding-top: 0;
   }
